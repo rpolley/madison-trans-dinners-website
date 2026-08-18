@@ -124,6 +124,7 @@ GEM
       raabro (~> 1.4)
     globalid (1.4.0)
       activesupport (>= 6.1)
+    high_voltage (5.0.0)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     image_processing (1.14.0)
@@ -389,6 +390,7 @@ DEPENDENCIES
   bundler-audit
   capybara
   debug
+  high_voltage (~> 5.0.0)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder

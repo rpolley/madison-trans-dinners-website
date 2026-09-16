@@ -1,5 +1,6 @@
 <?php
 require_once "../lib/database.php";
+$config = require "../conf/config.php";
 $pdo = connect_db();
 
 $json = file_get_contents("php://input");
@@ -43,7 +44,7 @@ $sql = <<<SQL
 SQL;
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
-    ':for_date' => '2026-09-17',
+    ':for_date' => $config['next_dinner_date'],
     ':first_name' => required_field($payload, 'field-first-name'),
     ':last_name' => required_field($payload, 'field-last-name'),
     ':email' => required_field($payload, 'field-email'),

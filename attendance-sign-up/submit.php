@@ -27,7 +27,8 @@ $sql = <<<SQL
             pronouns,
             dietary_needs,
             volunteer_selection,
-            comments
+            comments,
+            when_inserted
         )
     VALUES
         (
@@ -39,7 +40,8 @@ $sql = <<<SQL
             :pronouns,
             :dietary_needs,
             :volunteer_selection,
-            :comments
+            :comments,
+            NOW()
         )
 SQL;
 $stmt = $pdo->prepare($sql);

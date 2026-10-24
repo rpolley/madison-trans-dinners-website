@@ -235,6 +235,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <div class="wp-block-query alignwide has-global-padding is-layout-constrained wp-block-query-is-layout-constrained">
     <ul class="alignwide wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-167 post type-post status-publish format-standard hentry category-next-dinner">
     
+    <?php include './dynamic.php' ?>
+
     <div class="wp-block-group ext-animate--on has-global-padding is-layout-constrained wp-container-core-group-is-layout-93d1c0e2 wp-block-group-is-layout-constrained">
 		
 			<div class="wp-block-group alignwide is-style-ext-preset--group--natural-1--item-card-1--align-start has-global-padding is-layout-constrained wp-container-core-group-is-layout-d4c2d7a2 wp-block-group-is-layout-constrained is-style-ext-preset--group--natural-1--item-card-1--align-start--4" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
